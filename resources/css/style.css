@@ -1,0 +1,320 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.nav-container {
+  display: flex;
+  width: 960px;
+  height: 3rem;
+  margin: 1rem auto 0 auto;
+  background-color: cadetblue;
+  justify-content: space-between;
+}
+
+.mobile-nav-container {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu span {
+  display: inline-block;
+  padding: 1rem 2rem 1rem 0;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.main {
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  margin-left: 20rem;
+  padding: 1.5rem 5rem;
+  text-align: center;
+}
+
+.main span {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.icon-container {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+}
+
+.icon {
+  display: flex;
+  margin: auto;
+  padding: 3rem 0;
+}
+ .element {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: space-between;
+   height: 8rem;
+   width: 5rem;
+   padding: 0 3rem;
+ }
+
+#exams img {
+  width: 3.5rem;
+}
+
+#fitting img {
+  width: 5rem;
+}
+
+#delivery img {
+  width: 5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 35%;
+}
+
+#philo {
+  margin-right: 5%;
+}
+
+.text .blue {
+  background-color: cadetblue;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+}
+
+.text .white {
+  padding: 1rem 0 5rem 0;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  max-width: 960px;
+  background-color: azure;
+  margin: auto;
+  height: 9.5rem;
+  padding-left: 4rem;
+}
+
+footer .footer-text {
+  display: flex;
+  align-self: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 470px) {
+  header {
+    height: 22rem;
+  }
+
+  .nav-container {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .main-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    margin-left: 10rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .mobile-nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    height: 3rem;
+    background-color: cadetblue;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 1.25rem;
+    padding-right: 1rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    color: white;
+  }
+
+  .mobile-menu span {
+    margin-right: 1rem;
+  }
+
+  .main-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main {
+    width: 100%
+    margin-top: 9rem;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    }
+
+  .main span {
+    font-size: 1rem;
+    line-height: 1rem;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  .icon {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3.77rem;
+  }
+
+  .element span {
+    font-size: 0.77rem;
+  }
+
+  #fitting img {
+    padding-top: 1.54rem;
+  }
+
+  #delivery img {
+    padding-top: 1.54rem;
+  }
+
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .info .text {
+    max-width: 100%;
+  }
+
+  .text .blue {
+    width: 100%;
+    margin: auto;
+  }
+
+  .text .white {
+    font-size: 0.77rem;
+    padding: 1rem 0rem 4rem 0.77rem;
+    margin: 0;
+  }
+
+  .footer-text span {
+    display: none;
+  }
+
+  footer img {
+    height: 1.5rem;
+    align-self: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+    padding-left: 0;
+  }
+}
